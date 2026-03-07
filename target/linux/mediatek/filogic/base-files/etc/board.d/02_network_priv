@@ -7,14 +7,14 @@ mediatek_setup_interfaces()
 {
 	local board="$1"
 
-	case $board in
-	ZX7981EP)
-		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
-		;;
-	*)
-		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
-		;;
-	esac
+	# case $board in
+	# ZX7981EP)
+	# 	ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
+	# 	;;
+	# *)
+	# 	ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
+	# 	;;
+	# esac
 }
 
 mediatek_setup_macs()
