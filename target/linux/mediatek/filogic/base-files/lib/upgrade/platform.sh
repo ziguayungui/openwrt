@@ -186,6 +186,10 @@ platform_do_upgrade() {
 		CI_ROOTPART="rootfs"
 		emmc_do_upgrade "$1"
 		;;
+	ZX7981PD)
+		CI_UBIPART="ubi"
+		nand_do_upgrade "$1"
+		;;
 	*)
 		nand_do_upgrade "$1"
 		;;

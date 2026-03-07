@@ -6,7 +6,7 @@ board=$(board_name)
 board_config_update
 
 case $board in
-ZX7981EP)
+"ZX7981"*)
 	ucidef_set_led_netdev "lan" "lan" "lede:blue:lan" "eth1"
 	ucidef_set_led_netdev "wan" "wan" "lede:blue:wan" "wan"
 	ucidef_set_led_netdev "lan1" "lan1" "lede:blue:lan1" "lan1"
