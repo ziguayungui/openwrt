@@ -184,7 +184,6 @@ platform_do_upgrade() {
 	ZX7981EP)
 		CI_KERNPART="kernel"
 		CI_ROOTPART="rootfs"
-		CI_DATAPART="opt"
 		emmc_do_upgrade "$1"
 		;;
 	*)
@@ -251,7 +250,8 @@ platform_copy_config() {
 	smartrg,sdg-8733|\
 	smartrg,sdg-8733a|\
 	smartrg,sdg-8734|\
-	ubnt,unifi-6-plus)
+	ubnt,unifi-6-plus|\
+	ZX7981EP)
 		emmc_copy_config
 		;;
 	esac
